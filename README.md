@@ -7,7 +7,7 @@
 - 🌍 중력·자력 데이터 **파수 상관 분석**으로 지하 구조 규명 — SCIE *SPE Journal* 제1저자
 - 🎓 전북대학교 환경에너지융합학과 석사 (2026) · 자원에너지공학과 학사 · ADsP
 
-📄 **포트폴리오 & 이력서 → [0ju12.github.io](https://0ju12.github.io)**
+📄 **포트폴리오 & 이력서 → [0ju12.github.io](https://0ju12.github.io)**  ·  💼 [LinkedIn](https://www.linkedin.com/in/%EC%98%81%EC%A3%BC-%EC%9D%B4-a335ab251/)
 
 ---
 
