@@ -5,7 +5,7 @@
 - 🔥 시공간 딥러닝(U-LSTM) **산불 확산 경로 예측** 모델 설계·학습
 - 🗣️ FLAN-T5 + RAG **영어 표현 교정 시스템** — 포스코 청년 AI·Big Data 아카데미 30기 장려상
 - 🌍 중력·자력 데이터 **파수 상관 분석**으로 지하 구조 규명 — SCIE *SPE Journal* 제1저자
-- 💻 삼성 청년 SW·AI 아카데미(SSAFY) 16기 진행 중 — ML·NLP·LLM·비전, 알고리즘, Django
+- 💻 삼성 청년 SW·AI 아카데미(SSAFY) 16기 진행 중 — ML·NLP·LLM·비전, 알고리즘, Django · 관통 프로젝트 [ThRead](https://github.com/0Ju12/ssafy-thread)
 - 🎓 전북대학교 환경에너지융합학과 석사 (2026) · 자원에너지공학과 학사 · ADsP
 
 📄 **포트폴리오 & 이력서 → [0ju12.github.io](https://0ju12.github.io)**  ·  ✉️ iyju990312@naver.com  ·  💼 [LinkedIn](https://www.linkedin.com/in/%EC%98%81%EC%A3%BC-%EC%9D%B4-a335ab251/)
