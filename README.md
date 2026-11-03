@@ -17,7 +17,7 @@
 | 프로젝트 | 내용 | 기술 |
 |---|---|---|
 | [**🌍 gravmag-wcf — 중력·자력 파수 상관 필터링**](https://github.com/0Ju12/gravmag-wcf) | 석사 연구 코드. 겹친 중력·자력 신호를 파수별 위상 상관 CC(k)로 나눠 기반암(SLFI)·암염(DLFI) 지표를 만들고, 임계값을 에너지-상관 곡선으로 근거화. 합성 데이터 예제·테스트·CI 포함 | NumPy FFT · SciPy · pytest |
-| [**🔥 산불 확산 경로 예측**](https://github.com/0Ju12/wildfire-spread-prediction) | IAB 융합전공 캡스톤. 화선·기상·지형 래스터로 다음 시점의 산불 확산을 예측하는 U-LSTM. 모델 설계·학습 담당 | TensorFlow · rasterio · ArcGIS |
+| [**🔥 산불 확산 경로 예측**](https://github.com/0Ju12/wildfire-spread-prediction) | IAB 융합전공 캡스톤. 화선·기상·지형 래스터로 다음 시점의 산불 확산을 예측하는 U-LSTM. 모델 설계·학습 담당 · 미학습 산불 테스트 Accuracy 0.90 · F1 0.85 | TensorFlow · rasterio · ArcGIS |
 | [**💻 ThRead — LLM 댓글 분석 파이프라인**](https://github.com/0Ju12/ssafy-thread) | SSAFY 관통 프로젝트. Selenium 수집 → LLM 판단을 코드로 검증 → pandas 정제·증강·요약, Django 서비스. 자동 테스트 86개 | Django · Selenium · LLM API |
 | [**🗣️ 콩글리시 → 원어민 표현 교정**](https://github.com/POSCO-AI-BigData-30th/ai-pospeak/tree/db2-t5) | FLAN-T5 LoRA 파인튜닝 + FAISS 기반 RAG. 데이터 구축·학습 전략 비교 실험 담당 (BERTScore F1 0.74) | Hugging Face · PEFT · FAISS |
 
