@@ -20,6 +20,7 @@
 | [**🔥 산불 확산 경로 예측**](https://github.com/0Ju12/wildfire-spread-prediction) | IAB 융합전공 캡스톤. 화선·기상·지형 래스터로 다음 시점의 산불 확산을 예측하는 U-LSTM. 모델 설계·학습 담당 · 미학습 산불 테스트 Accuracy 0.90 · F1 0.85 | TensorFlow · rasterio · ArcGIS |
 | [**💻 ThRead — LLM 댓글 분석 파이프라인**](https://github.com/0Ju12/ssafy-thread) | SSAFY 관통 프로젝트. Selenium 수집 → LLM 판단을 코드로 검증 → pandas 정제·증강·요약, Django 서비스. 자동 테스트 142개 | Django · Selenium · LLM API |
 | [**🏛️ 국보 입문 가이드 — 근거 인용 RAG**](https://github.com/0Ju12/heritage-rag-guide) | 국가유산청 오픈API·위키백과 수집 → ChromaDB → LangGraph RAG. 답변의 근거 번호를 코드로 검증해 실제 인용한 근거만 표시. 오프라인 테스트 55개 · 답변 품질 평가 도구 | LangGraph · ChromaDB · Streamlit · FastAPI |
+| [**📊 data-projects — 공개 데이터 프로젝트 4종**](https://github.com/0Ju12/data-projects) | USGS 지진 증분 수집·대시보드(매일 자동 갱신) · 설비 센서 이상 탐지(무작위 0.99 → 시간 분할 0.46으로 부풀려진 성능 확인) · 전력거래소 수요 하루 전 예측(MAPE 3.23%) · DART SQL 데이터 마트 | Python · SQL · scikit-learn · GitHub Actions |
 | [**🗣️ 콩글리시 → 원어민 표현 교정**](https://github.com/POSCO-AI-BigData-30th/ai-pospeak/tree/db2-t5) | FLAN-T5 LoRA 파인튜닝 + FAISS 기반 RAG. 데이터 구축·학습 전략 비교 실험 담당 (BERTScore F1 0.74) | Hugging Face · PEFT · FAISS |
 
 ### 📝 논문
