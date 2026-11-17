@@ -1,7 +1,8 @@
 ## 안녕하세요, 이영주입니다 👋
 
-**데이터·AI 엔지니어** · 복잡한 지구과학 데이터를 딥러닝과 분석으로 풀어냅니다.
+**데이터 엔지니어 · 데이터 분석가** · 공개 데이터를 모으고 정제해, 검증할 수 있는 지표와 분석으로 만듭니다.
 
+- 🏗️ 공개 출처 6곳을 매일 모으는 **dbt·Airflow 웨어하우스** — [대시보드](https://0ju12.github.io/data-projects/warehouse/) · 공개 API 22개를 매시 점검하는 [API 관제판](https://0ju12.github.io/data-projects/api-watch/)
 - 🌍 중력·자력 데이터 **파수 상관 분석**으로 지하 구조 규명 — SCIE *SPE Journal* 제1저자 · 분석 코드 [gravmag-wcf](https://github.com/0Ju12/gravmag-wcf) · 브라우저에서 해 보기 [WCF 실험실](https://0ju12.github.io/data-projects/wcf/)
 - 🔬 학부연구생 제1저자 논문 — 판구조 형성사를 고려한 해외 대규모 CO2 저장소 탄성파 해석 · IAB 융합전공 시공간 딥러닝(U-LSTM) **산불 확산 예측**
 - 💻 삼성 청년 SW·AI 아카데미(SSAFY) 16기 — LLM 데이터 파이프라인 [ThRead](https://github.com/0Ju12/ssafy-thread) · 근거 인용 RAG [국보 입문 가이드](https://github.com/0Ju12/heritage-rag-guide) · AI 챌린지 VQA 앙상블 Public 0.96961
@@ -16,13 +17,14 @@
 
 | 프로젝트 | 내용 | 기술 |
 |---|---|---|
-| [**🌍 gravmag-wcf — 중력·자력 파수 상관 필터링**](https://github.com/0Ju12/gravmag-wcf) | 석사 연구 코드. 겹친 중력·자력 신호를 파수별 위상 상관 CC(k)로 나눠 기반암(SLFI)·암염(DLFI) 지표를 만들고, 임계값을 에너지-상관 곡선으로 근거화. 합성 데이터 예제·테스트·CI 포함 | NumPy FFT · SciPy · pytest |
-| [**🔥 산불 확산 경로 예측**](https://github.com/0Ju12/wildfire-spread-prediction) | IAB 융합전공 캡스톤. 화선·기상·지형 래스터로 다음 시점의 산불 확산을 예측하는 U-LSTM. 모델 설계·학습 담당 · 미학습 산불 테스트 Accuracy 0.90 · F1 0.85 | TensorFlow · rasterio · ArcGIS |
+| [**🏗️ 데이터 웨어하우스 (dbt · Airflow)**](https://github.com/0Ju12/data-projects/tree/main/warehouse) | 공개 출처 6개(지진·전력 수요·채용 공고·거래소 시세와 환율·패키지 통계·재해 경보)를 매일 수집해 dbt(DuckDB)로 3단 모델링 · 품질 테스트 101개 · 수정 이력 보존 · [대시보드](https://0ju12.github.io/data-projects/warehouse/) (Airflow 는 DAG 1회 실행까지 확인) |
+| [**📡 API Watch — 공개 API 관제**](https://github.com/0Ju12/data-projects/tree/main/api-watch) | 공개 API 22개를 매시 점검. HTTP 200이어도 오래된 자료·빈 결과·중복·자료형 변경을 따로 판정하고, 첫 정상 응답의 구조를 저장해 필드 추가와 삭제·형 변경을 구분. 연속 실패만 이슈 한 건으로 모음 · [관제판](https://0ju12.github.io/data-projects/api-watch/) | Python · Django · Docker Compose · GitHub Actions |
+| [**📊 data-projects — 공개 데이터 프로젝트**](https://github.com/0Ju12/data-projects) | USGS 지진 증분 수집·대시보드(매일 자동 갱신) · 설비 센서 이상 탐지(무작위 0.99 → 시간 분할 0.46으로 부풀려진 성능 확인) · 전력거래소 수요 하루 전 예측(기준선 MAPE 6.17% → 3.23%, [예측 탐색기](https://0ju12.github.io/data-projects/power/)) · DART SQL 데이터 마트 | Python · SQL · scikit-learn · GitHub Actions |
+| [**🔥 산불 위험 지도 · 🤖 데이터 에이전트**](https://github.com/0Ju12/data-projects) | [산불 위험 지도](https://0ju12.github.io/data-projects/fire/): 화재기상지수와 NASA 위성 탐지를 매일 비교(탐지의 90%는 제철소 등 상시 열원 → 가려내는 규칙). data-agent: 위 데이터를 LLM 이 조회하는 MCP 서버, SQL 안전장치와 답 속 숫자 검증 | Python · SQLite · MCP · GitHub Actions |
 | [**💻 ThRead — LLM 댓글 분석 파이프라인**](https://github.com/0Ju12/ssafy-thread) | SSAFY 관통 프로젝트. Selenium 수집 → LLM 판단을 코드로 검증 → pandas 정제·증강·요약, Django 서비스. 자동 테스트 142개 | Django · Selenium · LLM API |
 | [**🏛️ 국보 입문 가이드 — 근거 인용 RAG**](https://github.com/0Ju12/heritage-rag-guide) | 국가유산청 오픈API·위키백과 수집 → ChromaDB → LangGraph RAG. 답변의 근거 번호를 코드로 검증해 실제 인용한 근거만 표시. 오프라인 테스트 55개 · 답변 품질 평가 도구 | LangGraph · ChromaDB · Streamlit · FastAPI |
-| [**📊 data-projects — 공개 데이터 프로젝트**](https://github.com/0Ju12/data-projects) | USGS 지진 증분 수집·대시보드(매일 자동 갱신) · 설비 센서 이상 탐지(무작위 0.99 → 시간 분할 0.46으로 부풀려진 성능 확인) · 전력거래소 수요 하루 전 예측(기준선 MAPE 6.17% → 3.23%, [예측 탐색기](https://0ju12.github.io/data-projects/power/)) · DART SQL 데이터 마트 | Python · SQL · scikit-learn · GitHub Actions |
-| [**🏗️ 데이터 웨어하우스 (dbt · Airflow)**](https://github.com/0Ju12/data-projects/tree/main/warehouse) | 공개 출처 6개(지진·전력 수요·채용 공고·거래소 시세와 환율·패키지 통계·재해 경보)를 매일 수집해 dbt(DuckDB)로 3단 모델링 · 품질 테스트 101개 · 수정 이력 보존 · [대시보드](https://0ju12.github.io/data-projects/warehouse/) (Airflow 는 DAG 1회 실행까지 확인) |
-| [**🔥 산불 위험 지도 · 🤖 데이터 에이전트**](https://github.com/0Ju12/data-projects) | [산불 위험 지도](https://0ju12.github.io/data-projects/fire/): 화재기상지수와 NASA 위성 탐지를 매일 비교(탐지의 90%는 제철소 등 상시 열원 → 가려내는 규칙). data-agent: 위 데이터를 LLM 이 조회하는 MCP 서버, SQL 안전장치와 답 속 숫자 검증 | Python · SQLite · MCP · GitHub Actions |
+| [**🌍 gravmag-wcf — 중력·자력 파수 상관 필터링**](https://github.com/0Ju12/gravmag-wcf) | 석사 연구 코드. 겹친 중력·자력 신호를 파수별 위상 상관 CC(k)로 나눠 기반암(SLFI)·암염(DLFI) 지표를 만들고, 임계값을 에너지-상관 곡선으로 근거화. 합성 데이터 예제·테스트·CI 포함 | NumPy FFT · SciPy · pytest |
+| [**🔥 산불 확산 경로 예측**](https://github.com/0Ju12/wildfire-spread-prediction) | IAB 융합전공 캡스톤. 화선·기상·지형 래스터로 다음 시점의 산불 확산을 예측하는 U-LSTM. 모델 설계·학습 담당 · 미학습 산불 테스트 Accuracy 0.90 · F1 0.85 | TensorFlow · rasterio · ArcGIS |
 | [**🧩 swea-solutions — SWEA 풀이 모음**](https://github.com/0Ju12/swea-solutions) | SSAFY에서 푼 SWEA 36문제를 주제별(구현·그래프·백트래킹/DP·문자열)로 정리. 직접 만든 입력 테스트 37개, 테스트로 찾은 오류 6개는 고친 내용을 README에 기록 | Python · pytest · GitHub Actions |
 | [**🗣️ 콩글리시 → 원어민 표현 교정**](https://github.com/POSCO-AI-BigData-30th/ai-pospeak/tree/db2-t5) | FLAN-T5 LoRA 파인튜닝 + FAISS 기반 RAG. 데이터 구축·학습 전략 비교 실험 담당 (BERTScore F1 0.74) | Hugging Face · PEFT · FAISS |
 
