@@ -2,7 +2,7 @@
 
 **데이터 엔지니어 · 데이터 분석가** · 공개 데이터를 모으고 정제해, 검증할 수 있는 지표와 분석으로 만듭니다.
 
-- 🏗️ 공개 출처 6곳을 매일 모으는 **dbt·Airflow 웨어하우스** — [대시보드](https://0ju12.github.io/data-projects/warehouse/) · 공개 API 22개를 매시 점검하는 [API 관제판](https://0ju12.github.io/data-projects/api-watch/)
+- 🏗️ 공개 출처 6곳을 매일 모으는 **dbt·Airflow 웨어하우스** — [대시보드](https://0ju12.github.io/data-projects/warehouse/) · 공개 API 22개를 정기 점검하는 [API 관제판](https://0ju12.github.io/data-projects/api-watch/)
 - 🌍 중력·자력 데이터 **파수 상관 분석**으로 지하 구조 규명 — SCIE *SPE Journal* 제1저자 · 분석 코드 [gravmag-wcf](https://github.com/0Ju12/gravmag-wcf) · 브라우저에서 해 보기 [WCF 실험실](https://0ju12.github.io/data-projects/wcf/)
 - 🔬 학부연구생 제1저자 논문 — 판구조 형성사를 고려한 해외 대규모 CO2 저장소 탄성파 해석 · IAB 융합전공 시공간 딥러닝(U-LSTM) **산불 확산 예측**
 - 💻 삼성 청년 SW·AI 아카데미(SSAFY) 16기 — 냉장고 생활 코치 Agent [한끼](https://github.com/0Ju12/ai-agents) · LLM 데이터 파이프라인 [ThRead](https://github.com/0Ju12/ssafy-thread) · 근거 인용 RAG [국보 입문 가이드](https://github.com/0Ju12/heritage-rag-guide) · AI 챌린지 VQA 앙상블 Public 0.96961
@@ -18,7 +18,7 @@
 | 프로젝트 | 내용 | 기술 |
 |---|---|---|
 | [**🏗️ 데이터 웨어하우스 (dbt · Airflow)**](https://github.com/0Ju12/data-projects/tree/main/warehouse) | 공개 출처 6개(지진·전력 수요·채용 공고·거래소 시세와 환율·패키지 통계·재해 경보)를 매일 수집해 dbt(DuckDB)로 3단 모델링 · 품질 테스트 101개 · 수정 이력 보존 · [대시보드](https://0ju12.github.io/data-projects/warehouse/) (Airflow 는 DAG 1회 실행까지 확인) |
-| [**📡 API Watch — 공개 API 관제**](https://github.com/0Ju12/data-projects/tree/main/api-watch) | 공개 API 22개를 매시 점검. HTTP 200이어도 오래된 자료·빈 결과·중복·자료형 변경을 따로 판정하고, 첫 정상 응답의 구조를 저장해 필드 추가와 삭제·형 변경을 구분. 연속 실패만 이슈 한 건으로 모음 · [관제판](https://0ju12.github.io/data-projects/api-watch/) | Python · Django · Docker Compose · GitHub Actions |
+| [**📡 API Watch — 공개 API 관제**](https://github.com/0Ju12/data-projects/tree/main/api-watch) | 공개 API 22개를 정기 점검. HTTP 200이어도 오래된 자료·빈 결과·중복·자료형 변경을 따로 판정하고, 첫 정상 응답의 구조를 저장해 필드 추가와 삭제·형 변경을 구분. 연속 실패만 이슈 한 건으로 모음 · [관제판](https://0ju12.github.io/data-projects/api-watch/) | Python · Django · Docker Compose · GitHub Actions |
 | [**📊 data-projects — 공개 데이터 프로젝트**](https://github.com/0Ju12/data-projects) | USGS 지진 증분 수집·대시보드(매일 자동 갱신) · 설비 센서 이상 탐지(무작위 0.99 → 시간 분할 0.46으로 부풀려진 성능 확인) · 전력거래소 수요 하루 전 예측(지난주 같은 시각 기준선 MAPE 6.17% → 3.23%, [예측 탐색기](https://0ju12.github.io/data-projects/power/)) · DART SQL 데이터 마트 | Python · SQL · scikit-learn · GitHub Actions |
 | [**🔥 산불 위험 지도 · 🤖 데이터 에이전트**](https://github.com/0Ju12/data-projects) | [산불 위험 지도](https://0ju12.github.io/data-projects/fire/): 화재기상지수와 NASA 위성 탐지를 매일 비교(탐지의 90%는 제철소 등 상시 열원 → 가려내는 규칙). data-agent: 위 데이터를 LLM 이 조회하는 MCP 서버, SQL 안전장치와 답 속 숫자 검증 | Python · SQLite · MCP · GitHub Actions |
 | [**🥗 한끼 — 냉장고 재고 기반 식단·운동 코치 Agent**](https://github.com/0Ju12/ai-agents) | SSAFY AI 코어 프로젝트 3(개인) → 최종 프로젝트. LangGraph 분석→계획→실행→판정⟲재계획(최대 3회)→응답. 모델은 해석·보조 도구 선택·문장만, 재고·분량·부족 g 판정은 코드. 로깅 Agent(모델 미사용)로 중복·계획 밖 호출 판정, Chroma RAG(안내 문서 31편), Android 셸 · 자동 테스트 100개 | LangGraph · FastAPI · SQLite · ChromaDB · Android |
