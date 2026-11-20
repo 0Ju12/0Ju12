@@ -5,7 +5,7 @@
 - 🏗️ 공개 출처 6곳을 매일 모으는 **dbt·Airflow 웨어하우스** — [대시보드](https://0ju12.github.io/data-projects/warehouse/) · 공개 API 22개를 정기 점검하는 [API 관제판](https://0ju12.github.io/data-projects/api-watch/)
 - 🌍 중력·자력 데이터 **파수 상관 분석**으로 지하 구조 규명 — SCIE *SPE Journal* 제1저자 · 분석 코드 [gravmag-wcf](https://github.com/0Ju12/gravmag-wcf) · 브라우저에서 해 보기 [WCF 실험실](https://0ju12.github.io/data-projects/wcf/)
 - 🔬 학부연구생 제1저자 논문 — 판구조 형성사를 고려한 해외 대규모 CO2 저장소 탄성파 해석 · IAB 융합전공 시공간 딥러닝(U-LSTM) **산불 확산 예측**
-- 💻 삼성 청년 SW·AI 아카데미(SSAFY) 16기 — 냉장고 생활 코치 Agent [한끼](https://github.com/0Ju12/ai-agents) · LLM 데이터 파이프라인 [ThRead](https://github.com/0Ju12/ssafy-thread) · 근거 인용 RAG [국보 입문 가이드](https://github.com/0Ju12/heritage-rag-guide) · AI 챌린지 VQA 앙상블 Public 0.96961
+- 💻 삼성 청년 SW·AI 아카데미(SSAFY) 16기 — 냉장고 생활 코치 Agent [한끼](https://github.com/0Ju12/ai-agents) · 근거 인용 RAG [국보 입문 가이드](https://github.com/0Ju12/heritage-rag-guide) · AI 챌린지 VQA 앙상블 Public 0.96961
 - 🗣️ 포스코 청년 AI·BigData 아카데미 30기 — 콩글리시 교정 FLAN-T5 + RAG (POSPEAK/KILL KONG) · 장려상
 - 🎓 전북대학교 환경에너지융합학과 석사 (2026) · 자원에너지공학과 학사 · ADsP
 
@@ -22,7 +22,6 @@
 | [**📊 data-projects — 공개 데이터 프로젝트**](https://github.com/0Ju12/data-projects) | USGS 지진 증분 수집·대시보드(매일 자동 갱신) · 설비 센서 이상 탐지(무작위 0.99 → 시간 분할 0.46으로 부풀려진 성능 확인) · 전력거래소 수요 하루 전 예측(지난주 같은 시각 기준선 MAPE 6.17% → 3.23%, [예측 탐색기](https://0ju12.github.io/data-projects/power/)) · DART SQL 데이터 마트 | Python · SQL · scikit-learn · GitHub Actions |
 | [**🔥 산불 위험 지도 · 🤖 데이터 에이전트**](https://github.com/0Ju12/data-projects) | [산불 위험 지도](https://0ju12.github.io/data-projects/fire/): 화재기상지수와 NASA 위성 탐지를 매일 비교(탐지의 90%는 제철소 등 상시 열원 → 가려내는 규칙). data-agent: 위 데이터를 LLM 이 조회하는 MCP 서버, SQL 안전장치와 답 속 숫자 검증 | Python · SQLite · MCP · GitHub Actions |
 | [**🥗 한끼 — 냉장고 재고 기반 식단·운동 코치 Agent**](https://github.com/0Ju12/ai-agents) | SSAFY AI 코어 프로젝트 3(개인) → 최종 프로젝트. LangGraph 분석→계획→실행→판정⟲재계획(최대 3회)→응답. 모델은 해석·보조 도구 선택·문장만, 재고·분량·부족 g 판정은 코드. 로깅 Agent(모델 미사용)로 중복·계획 밖 호출 판정, Chroma RAG(안내 문서 31편), Android 셸 · 자동 테스트 110개 | LangGraph · FastAPI · SQLite · ChromaDB · Android |
-| [**💻 ThRead — LLM 댓글 분석 파이프라인**](https://github.com/0Ju12/ssafy-thread) | SSAFY 관통 프로젝트. Selenium 수집 → LLM은 부적절한 댓글 번호만 고르고 코드가 범위 검사 후 원본에서 제거 → pandas 정제·증강·요약, Django 서비스. 자동 테스트 142개 | Django · Selenium · LLM API |
 | [**🏛️ 국보 입문 가이드 — 근거 인용 RAG**](https://github.com/0Ju12/heritage-rag-guide) | 국가유산청 오픈API·위키백과 수집 → ChromaDB → LangGraph RAG. 답변의 근거 번호를 코드로 검증해 실제 인용한 근거만 표시. 오프라인 테스트 55개 · 답변 품질 평가 도구 | LangGraph · ChromaDB · Streamlit · FastAPI |
 | [**🌍 gravmag-wcf — 중력·자력 파수 상관 필터링**](https://github.com/0Ju12/gravmag-wcf) | 석사 연구 코드. 겹친 중력·자력 신호를 파수별 위상 상관 CC(k)로 나눠 기반암(SLFI)·암염(DLFI) 지표를 만들고, 임계값을 에너지-상관 곡선으로 근거화. 합성 데이터 예제·테스트·CI 포함 | NumPy FFT · SciPy · pytest |
 | [**🔥 산불 확산 경로 예측**](https://github.com/0Ju12/wildfire-spread-prediction) | IAB 융합전공 캡스톤. 화선·기상·지형 래스터로 다음 시점의 산불 확산을 예측하는 U-LSTM. 모델 설계·학습 담당 · 미학습 산불 테스트 Accuracy 0.90 · F1 0.85 | TensorFlow · rasterio · ArcGIS |
